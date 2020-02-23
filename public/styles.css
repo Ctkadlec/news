@@ -1,8 +1,16 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(192, 192, 192);
+  background-image: url(https://secureservercdn.net/184.168.47.225/47f.bb2.myftpupload.com/wp-content/uploads/2015/02/weather-banner1.jpg?time=1580872202);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-blend-mode:overlay;
+  font-family: 'Trade Winds';
+ 
 }
 
 h1 {
-  color: navy;
+  color: rgba(0,0,0);
   margin-left: 20px;
-}
+  font-family: 'Trade Winds';
+  }
