@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+      <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google Fonts -->
     <!-- Swap out "Roboto" for the font(s) you want to use -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
@@ -16,15 +16,128 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
     <!-- Your own CSS -->
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="workspace/news/public/styles.css">
 
-    <title>News</title>
+    <title>News and Weather</title>
   </head>
-  <body>
 
+  <body>
+<h1>testing</h1>
     <div class="container mt-5">
-      <h1>News</h1>
+      <h1> <%=@city%> Weather</h1>
+      <p> 
+     
+      </p>
+ 
+      
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Day</th>
+      <th scope="col">High</th>
+      <th scope="col">Conditions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="Today"><%=@date1%></th>
+      <td><%=@day1%></td>
+      <td><%=@forecast["daily"]["data"][0]["temperatureHigh"]%></th>
+      <td><%=@daily%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=@date2%></th>
+      <td><%=@day2%></td>
+      <td><%=@tommorrowhigh%></td>
+      <td><%=@day2conditions%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=@date3%></th>
+      <td><%=@day3%></td>
+      <td><%=@day3high%></td>
+      <td><%=@day3conditions%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=@date4%></th>
+      <td><%=@day4%></td>
+      <td><%=@day4high%></td>
+      <td><%=@day4conditions%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=@date5%></th>
+      <td><%=@day5%></td>
+      <td><%=@day5high%></td>
+      <td><%=@day5conditions%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=@date6%></th>
+      <td><%=@day6%></td>
+      <td><%=@day6high%></td>
+      <td><%=@day6conditions%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%=@date7%></th>
+      <td><%=@day7%></td>
+      <td><%=@day7high%></td>
+      <td><%=@day7conditions%></td>
+    </tr>
+  </tbody>
+</table>
+<h1>Top Headlines from Around the World!</h1>
+<div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><a href="<%=@article1url%>"><%=@article1title%></a></td>
+      <td><%=@article1des%></td>
+      <td><%=@article1source%></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+     <td><a href="<%=@article2url%>"><%=@article2title%></a></td>
+      <td><%=@article2des%></td>
+      <td><%=@article2source%></td>
+    </tr>
+   <tr>
+      <th scope="row">3</th>
+    <td><a href="<%=@article3url%>"><%=@article3title%></a></td>
+      <td><%=@article3des%></td>
+      <td><%=@article3source%></td>
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+     <td><a href="<%=@article4url%>"><%=@article4title%></a></td>
+      <td><%=@article4des%></td>
+      <td><%=@article4source%></td>
+    </tr>
+     <tr>
+      <th scope="row">5</th>
+     <td><a href="<%=@article5url%>"><%=@article5title%></a></td>
+      <td><%=@article5des%></td>
+      <td><%=@article5source%></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+        
+       
     </div>
+
+   
+      
+    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
